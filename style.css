@@ -1,0 +1,154 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 120px;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.jaro-regular {
+    font-family: "Jaro", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+.inter-title {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+p{
+    font-size: 24px;
+    line-height: 34px;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+
+h1 {
+    font-size: 76px;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2{
+    font-size: 48px;
+    line-height: 54px;
+}
+
+.city-wrapper {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 100px;
+    background-color: rgb(21, 21, 143);
+    padding: 50px;
+}
+
+.city-img {
+    width: 40%;
+}
+
+.city-text {
+    width: 60%;
+}
+
+
+.cities-section {
+    margin-top: 120px;
+}
+
+.london-links a {
+    color: red;
+    background-color: transparent;
+}
+/* ----------------------CODE FOR THE NAVBAR--------------------------- */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #BC9845;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 200px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #FFFFFF;
+    color: #BC9845;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #E8B954;
+    color: #FFFFFF;
+  }
+
+  /* ----------------------CODE FOR THE NAVBAR--------------------------- */
+
+
+/* ----------------------CODE FOR THE HEADER--------------------------- */
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("test.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* ----------------------CODE FOR THE HEADER--------------------------- */
