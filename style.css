@@ -8,26 +8,46 @@ body {
     margin: 0;
 }
 
+footer {
+  color: black;
+}
 
+details {
+  font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 40 px;
+    font-weight: 500;
+    font-style: normal;
+}
 .container {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    margin: 120px;
+    margin: auto;
+}
+
+.decor-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.image-container {
+display: flex;
+justify-content: center;
+gap: 20px;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+margin: auto;
 }
 
 .w-100{
     width: 100%;
 }
 
-.jaro-regular {
-    font-family: "Jaro", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  
 .inter-title {
     font-family: "Inter", serif;
     font-optical-sizing: auto;
@@ -73,6 +93,26 @@ h2{
     padding: 50px;
 }
 
+.office-wrapper2 {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 100px;
+  background-color: #000000;
+  padding: 100px;
+}
+
+  .office-wrapper3 {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 100px;
+    background-color: #868186;
+    padding: 100px;
+  
+}
 .office-img {
     width: 40%;
     align-content: center;
@@ -80,18 +120,27 @@ h2{
 
 .office-text {
     width: 60%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
 }
 
 
-.cities-section {
+.blocks-section {
     margin-top: 120px;
 }
 
-.london-links a {
-    color: red;
+.links a {
+    color: #BC9845;
     background-color: transparent;
 }
-/* ----------------------CODE FOR THE NAVBAR--------------------------- */
+
+.text-color {
+  color: black;
+}
+
+/* ----------------------START CODE FOR THE NAVBAR--------------------------- */
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -107,6 +156,8 @@ h2{
     padding: 14px 200px;
     text-decoration: none;
     font-size: 17px;
+    font-family: "Inter", serif;
+
   }
   
   /* Change the color of links on hover */
@@ -121,23 +172,50 @@ h2{
     color: #FFFFFF;
   }
 
-  /* ----------------------CODE FOR THE NAVBAR--------------------------- */
+  /* ----------------------END CODE FOR THE NAVBAR--------------------------- */
 
 
-/* ----------------------CODE FOR THE HEADER--------------------------- */
+/* ----------------------START CODE FOR THE HEADER--------------------------- */
 body, html {
     height: 100%;
 }
 
 /* The hero image */
-.hero-image {
+.hero-image1 {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("test.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Assets/Hero1.jpg");
 
   /* Set a specific height */
   height: 50%;
 
   /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Assets/Hero2.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Assets/Hero3.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Assets/dona\ figures.jpg");
+  height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,4 +232,110 @@ body, html {
   color: white;
 }
 
-/* ----------------------CODE FOR THE HEADER--------------------------- */
+/* ----------------------END CODE FOR THE HEADER--------------------------- */
+
+
+
+
+/* ----------------------START CODE FOR THE GALLERY--------------------------- */
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container2 {
+  position: relative;
+  margin-top: 80px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Hide the images by default */
+.mySlides2 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* ----------------------END CODE FOR THE GALLERY--------------------------- */
