@@ -38,6 +38,10 @@ details {
 display: flex;
 justify-content: center;
 gap: 20px;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+margin: auto;
 }
 
 .w-100{
@@ -177,14 +181,41 @@ body, html {
 }
 
 /* The hero image */
-.hero-image {
+.hero-image1 {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("test.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Assets/Hero1.jpg");
 
   /* Set a specific height */
   height: 50%;
 
   /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Assets/Hero2.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Assets/Hero3.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Assets/dona\ figures.jpg");
+  height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
